@@ -2,12 +2,11 @@
 Credits
 =======
 
-Development Lead
-----------------
+Authors
+-------
 
-* Sartaaj Khan <sartaaj.khan@mail.utoronto.ca>
+* Sartaaj Khan\ :sup:`1` <sartaaj.khan@mail.utoronto.ca>
+* Seyed Mohamad Moosavi\ :sup:`1,2` <mohamad.moosavi@utoronto.ca>
 
-Contributors
-------------
-
-None yet. Why not be the first?
+.. [1] University of Toronto
+.. [2] University of Toronto and Acceleration Consortium
