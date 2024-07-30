@@ -1,0 +1,1 @@
+Sc1cc(C2=CN=N[CH]2)c(cc1c1cc(cc(c1)C(=O)[O-])C(=O)[O-])S.Sc1cc(C2=C[N]N=C2)c(cc1c1cc(cc(c1)C(=O)[O-])C(=O)[O-])S.[Cu].[Cu][Cu] MOFid-v1.ssb.cat0;rht_sym_3_mc_0_sym_24_mc_13_L_12_FGSH_2__

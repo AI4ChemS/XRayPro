@@ -1,0 +1,1 @@
+O=N(=O)c1cc(C(=O)[O-])c(cc1C1=NC(=[N]=C([N]1)c1cc(N(=O)=O)c(cc1N(=O)=O)C(=O)[O-])c1cc(N(=O)=O)c(cc1N(=O)=O)C(=O)[O-])N(=O)=O.[Zn][O]([Zn])([Zn])[Zn] MOFid-v1.pcu.cat0;pyr_sym_3_on_1_sym_6_mc_3_L_12_FGNO_2__

@@ -1,0 +1,1 @@
+N#Cc1cc(C(=O)[O-])c(cc1c1cc(c(cc1c1cc(C#N)c(cc1C#N)C(=O)[O-])c1cc(C#N)c(cc1C#N)C(=O)[O-])c1cc(C#N)c(cc1C#N)C(=O)[O-])C#N.[Cr][O]([Cr])[Cr] MOFid-v1.ERROR.cat0;stp_sym_5_on_9_sym_7_mc_4_L_12_FGCN_2__

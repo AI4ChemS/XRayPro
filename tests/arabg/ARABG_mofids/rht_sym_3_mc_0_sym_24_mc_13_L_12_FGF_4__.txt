@@ -1,0 +1,1 @@
+Fc1c(c2cc(cc(c2)C(=O)[O-])C(=O)[O-])c(F)c(c(c1F)C1=CN=N[CH]1)F.Fc1c(c2cc(cc(c2)C(=O)[O-])C(=O)[O-])c(F)c(c(c1F)C1=C[N]N=C1)F.[Cu].[Cu][Cu] MOFid-v1.bcu.cat0;rht_sym_3_mc_0_sym_24_mc_13_L_12_FGF_4__

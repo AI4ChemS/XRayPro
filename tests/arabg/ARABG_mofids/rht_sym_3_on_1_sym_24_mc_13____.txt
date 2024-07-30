@@ -1,0 +1,1 @@
+[Cu][Cu].[O-]C(=O)c1cc(cc(c1)C(=O)[O-])C1=NC(=[N]=C([N]1)c1cc(cc(c1)C(=O)[O-])C(=O)[O-])c1cc(cc(c1)C(=O)[O-])C(=O)[O-] MOFid-v1.stp.cat0;rht_sym_3_on_1_sym_24_mc_13____

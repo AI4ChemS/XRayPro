@@ -1,0 +1,1 @@
+Brc1cc(C(=O)[O-])c(cc1C1=NC(=[N]=C([N]1)c1cc(Br)c(cc1Br)C(=O)[O-])c1cc(Br)c(cc1Br)C(=O)[O-])Br.[Zn][O]([Zn])([Zn])[Zn] MOFid-v1.ERROR,rna.cat0;pyr_sym_3_on_1_sym_6_mc_3_L_12_FGB_2__

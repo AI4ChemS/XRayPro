@@ -1,0 +1,1 @@
+Fc1c(C2=NC(=[N]=C([N]2)c2c(F)c(F)c(c(c2F)F)C(=O)[O-])c2c(F)c(F)c(c(c2F)F)C(=O)[O-])c(F)c(c(c1F)C(=O)[O-])F.[Zn][O]([Zn])([Zn])[Zn] MOFid-v1.ERROR.cat0;pyr_sym_3_on_1_sym_6_mc_3_L_12_FGF_4__

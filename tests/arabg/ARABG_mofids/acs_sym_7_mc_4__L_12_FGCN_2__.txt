@@ -1,0 +1,1 @@
+N#Cc1cc(C(=O)[O-])c(cc1C(=O)[O-])C#N.[Cr][O]([Cr])[Cr] MOFid-v1.ERROR,TIMEOUT.cat0;acs_sym_7_mc_4__L_12_FGCN_2__

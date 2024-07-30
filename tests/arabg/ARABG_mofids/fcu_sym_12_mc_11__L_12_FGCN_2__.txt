@@ -1,0 +1,1 @@
+N#Cc1cc(C(=O)[O-])c(cc1C(=O)[O-])C#N.[O]12[Zr]34[OH]5[Zr]62[OH]2[Zr]71[OH]4[Zr]14[O]3[Zr]35[O]6[Zr]2([O]71)[OH]43 MOFid-v1.ERROR,rhr.cat0;fcu_sym_12_mc_11__L_12_FGCN_2__

@@ -1,0 +1,1 @@
+[Cu][Cu].[O-]C(=O)c1cc(N)c(cc1N)c1cc(c(cc1c1cc(N)c(cc1N)C(=O)[O-])c1cc(N)c(cc1N)C(=O)[O-])c1cc(N)c(cc1N)C(=O)[O-] MOFid-v1.lvt.cat0;nbob_sym_5_mc_2_sym_5_on_9_L_12_FGNH_2__

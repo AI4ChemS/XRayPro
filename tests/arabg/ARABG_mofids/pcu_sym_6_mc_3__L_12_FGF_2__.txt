@@ -1,0 +1,1 @@
+[O-]C(=O)c1cc(F)c(cc1F)C(=O)[O-].[Zn][O]([Zn])([Zn])[Zn] MOFid-v1.ERROR,bcs.cat0;pcu_sym_6_mc_3__L_12_FGF_2__

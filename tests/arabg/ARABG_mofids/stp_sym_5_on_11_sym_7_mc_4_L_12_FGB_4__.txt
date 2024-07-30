@@ -1,0 +1,1 @@
+[Cr][O]([Cr])[Cr].[O-]C(=O)c1c(Br)c(Br)c(c(c1Br)Br)c1cc(c2c(Br)c(Br)c(c(c2Br)Br)C(=O)[O-])c2c3c1ccc1c3c(cc2)c(cc1c1c(Br)c(Br)c(c(c1Br)Br)C(=O)[O-])c1c(Br)c(Br)c(c(c1Br)Br)C(=O)[O-] MOFid-v1.nbo.cat0;stp_sym_5_on_11_sym_7_mc_4_L_12_FGB_4__

@@ -1,0 +1,1 @@
+Oc1cc(C(=O)[O-])c(cc1C1=CN=N[CH]1)O.Oc1cc(C(=O)[O-])c(cc1C1=C[N]N=C1)O.[Cu].[Zn][O]([Zn])([Zn])[Zn] MOFid-v1.ERROR.cat0;pyr_sym_3_mc_0_sym_6_mc_3_L_12_FGOH_2__

@@ -1,0 +1,1 @@
+[Cr][O]([Cr])[Cr].[O-]C(=O)c1cc(S)c(cc1S)C(=O)[O-] MOFid-v1.ERROR,UNKNOWN.cat0;acs_sym_7_mc_4__L_12_FGSH_2__

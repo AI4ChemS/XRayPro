@@ -1,0 +1,1 @@
+N#Cc1cc(C(=O)[O-])c(cc1c1cc(c2cc(C#N)c(cc2C#N)C(=O)[O-])c2c3c1ccc1c3c(cc2)c(cc1c1cc(C#N)c(cc1C#N)C(=O)[O-])c1cc(C#N)c(cc1C#N)C(=O)[O-])C#N.[Cu][Cu] MOFid-v1.rhr,UNKNOWN.cat0;lvtb_sym_5_mc_2_sym_5_on_11_L_12_FGCN_2__

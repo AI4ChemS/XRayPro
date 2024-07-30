@@ -1,0 +1,1 @@
+[Cu][Cu].[O-]C(=O)c1cc(cc(c1)C(=O)[O-])c1c(Br)c(Br)c(c(c1Br)Br)c1cc(cc(c1)c1c(Br)c(Br)c(c(c1Br)Br)c1cc(cc(c1)C(=O)[O-])C(=O)[O-])c1c(Br)c(Br)c(c(c1Br)Br)c1cc(cc(c1)C(=O)[O-])C(=O)[O-] MOFid-v1.stp,nbo.cat0;rht_sym_3_on_2_sym_24_mc_13_L_12_FGB_4__
