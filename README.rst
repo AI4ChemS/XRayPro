@@ -6,14 +6,9 @@ XRayPro
 .. image:: https://img.shields.io/pypi/v/xraypro.svg
         :target: https://pypi.python.org/pypi/xraypro
 
-.. image:: https://img.shields.io/travis/sartaajkhan/xraypro.svg
-        :target: https://travis-ci.com/sartaajkhan/xraypro
-
 .. image:: https://readthedocs.org/projects/xraypro/badge/?version=latest
         :target: https://xraypro.readthedocs.io/en/latest/?version=latest
         :alt: Documentation Status
-
-
 
 
 A recommendation system for MOFs leveraging only PXRDs and precursors
