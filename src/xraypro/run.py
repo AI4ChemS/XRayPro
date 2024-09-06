@@ -8,22 +8,15 @@ import pickle
 import os
 import yaml
 
-def finetune(model, train_loader, test_loader, save_path = 'ft_uptake_high_pressure.h5', device = 'cuda:0', num_epoch = 100, label = 'CH4 Uptake at 64 bar'):
+def finetune(model, train_loader, val_loader, test_loader, file_path = 'data/CoRE-MOF/ft', save_path = 'ft_uptake_high_pressure.h5', device = 'cuda:0', num_epoch = 100, label = 'CH4 Uptake at 64 bar'):
     __file__ = 'xraypro.py'
     current_dir = os.path.dirname(os.path.abspath(__file__))
     yaml_path = os.path.abspath(os.path.join(current_dir, '..', 'src', 'xraypro', 'MOFormer_modded', 'config_ft_transformer.yaml'))
 
     config = yaml.load(open(yaml_path, "r"), Loader=yaml.FullLoader)
-    file_path = f'ft/{label}'
 
-    new_dir_path = os.path.join(os.getcwd(), 'ft', label)
+    new_dir_path = os.path.join(os.getcwd(), file_path, label)
     os.makedirs(new_dir_path, exist_ok = True)
-
-    with open(f'{file_path}/train_loader.pickle', 'wb') as handle:
-        pickle.dump(train_loader, handle, protocol=pickle.HIGHEST_PROTOCOL)
-
-    with open(f'{file_path}/test_loader.pickle', 'wb') as handle:
-        pickle.dump(test_loader, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
     criterion = nn.MSELoss()
     optimizer = optim.Adam(model.regression_head.parameters(), lr = 0.01)
@@ -34,6 +27,13 @@ def finetune(model, train_loader, test_loader, save_path = 'ft_uptake_high_press
 
     loss_history, val_history, srcc_val_history = [], [], []
     model.train()
+
+    n_iter = 0
+    best_valid_loss = np.inf
+
+    loss_history, val_history, srcc_val_history = [], [], []
+    model.train()
+    num_epoch = 100
 
     for epoch_counter in range(num_epoch):
         loss_temp = []
@@ -81,7 +81,7 @@ def finetune(model, train_loader, test_loader, save_path = 'ft_uptake_high_press
         srcc_val_temp = []
         model.eval()
         with torch.no_grad():
-            for bn, (input1, input2, target) in enumerate(test_loader):
+            for bn, (input1, input2, target) in enumerate(val_loader):
                 if config['cuda']:
                     input_var_1 = input1.to(device)
                     input_var_2 = input2.unsqueeze(1).to(device)
@@ -103,9 +103,9 @@ def finetune(model, train_loader, test_loader, save_path = 'ft_uptake_high_press
                 val_temp.append(loss_val.item())
                 srcc_val_temp.append(scipy.stats.spearmanr(output.cpu().numpy(), target_var.cpu().numpy())[0])
         
-        if np.mean(srcc_val_temp) > best_srcc_valid:
-            best_srcc_valid = np.mean(srcc_val_temp)
-            torch.save(model.state_dict(), save_path)
+        if np.mean(val_temp) < best_valid_loss:
+            best_valid_loss = np.mean(val_temp)
+            torch.save(model.state_dict(), f'{file_path}/{label}/{save_path}')
         
         elif np.mean(srcc_val_temp) == np.nan:
             pass
@@ -114,7 +114,7 @@ def finetune(model, train_loader, test_loader, save_path = 'ft_uptake_high_press
         val_history.append(np.mean(val_temp))
 
         if epoch_counter % 1 == 0:
-            print(f'Epoch: {epoch_counter+1}, Batch: {bn}, Loss: {loss_history[-1]}, Val Loss: {val_history[-1]}, SRCC_test = {srcc_val_history[-1]}')
+            print(f'Epoch: {epoch_counter+1}, Batch: {bn}, Loss: {loss_history[-1]}, Val Loss: {val_history[-1]}, Val SRCC = {srcc_val_history[-1]}')
     
     return model
 
