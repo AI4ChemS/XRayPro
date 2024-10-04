@@ -29,6 +29,21 @@ A couple of benchmark models were considered - a descriptor-based ML model (whic
 
 ![spider_w_cgcnn_v2](https://github.com/user-attachments/assets/cc690a38-6856-49b9-87e3-111344343148)
 
+## Citation
+
+If you use our work, please cite us using the BibTeX entry below.
+
+```bibtex
+@article{XRayPro,
+  title={Connecting metal-organic framework synthesis to applications with a self-supervised multimodal model},
+  author={Sartaaj Khan and Seyed Mohamad Moosavi},
+  journal={journalName},
+  year={2024},
+  volume={volumeName},
+  pages={pagesOfJournal},
+  publisher={publisherName}
+}
+```
 
 ## Credits
 
