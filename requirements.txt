@@ -1,0 +1,11 @@
+numpy==1.26.4
+pandas==2.2.2
+matplotlib==3.8.4
+psutil==5.9.8
+h5py
+scipy==1.13.0
+torch==2.3.0
+pymatgen==2024.9.17.1
+streamlit==1.39.0
+pdf2image==1.17.0
+requests==2.32.3
