@@ -3,13 +3,13 @@
 
 ## XRayPro
 
-A recommendation system for MOFs leveraging only PXRDs and precursors. For further details, please refer to our [paper](URL). 
+A recommendation system for MOFs leveraging only PXRDs and precursors. For further details, please refer to our [paper](https://chemrxiv.org/engage/chemrxiv/article-details/671a9d9783f22e42140f2df6). 
 
 ## Usage
 A demo of the finetuning can be found in ```src/demo.ipynb``` (full finetuning script is available in ```src/run.py```), in which the model is finetuned to predict methane uptake at HP on CoRE-MOF database. For pretraining purposes, please refer to ```src/pretrain.py```. 
 
 ## Web Application
-We have a Streamlit application for XRayPro, available [here](URL). If you wish to install the application to run on your machine locally, please visit the [web repository](https://github.com/AI4ChemS/xraypro-web/tree/main) for a guide to install.
+We have a Streamlit application for XRayPro, available [here](xraypro.streamlit.app). If you wish to install the application to run on your machine locally, please visit the [web repository](https://github.com/AI4ChemS/xraypro-web/tree/main) for a guide to install.
 
 ## Main
 
