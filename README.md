@@ -6,7 +6,7 @@
 A recommendation system for MOFs leveraging only PXRDs and precursors. For further details, please refer to our [paper](https://chemrxiv.org/engage/chemrxiv/article-details/671a9d9783f22e42140f2df6). 
 
 ## Usage
-A demo of the finetuning can be found in ```src/demo.ipynb``` (full finetuning script is available in ```src/run.py```), in which the model is finetuned to predict methane uptake at HP on CoRE-MOF database. For pretraining purposes, please refer to ```src/pretrain.py```. 
+A demo of the finetuning can be found in ```src/finetuning.ipynb```, in which the model is finetuned to predict methane uptake at HP on BW20K database. For pretraining purposes, please refer to ```src/pretrain.py```. For making predictions with loaded weights, please refer to ```src/predictions.ipynb```. For preprocessing experimental PXRDs, visit ```src/experimental.ipynb```.
 
 ## Web Application
 We have a Streamlit application for XRayPro, available [here](https://xraypro.streamlit.app). If you wish to install the application to run on your machine locally, please visit the [web repository](https://github.com/AI4ChemS/xraypro-web/tree/main) for a guide to install.
@@ -44,6 +44,9 @@ If you use our work, please cite us using the BibTeX entry below.
   note = {Preprint, not peer-reviewed}
 }
 ```
+
+## Note
+Our web app tool does not store any data that is inputted into the entry fields (there is no external database for this).
 
 ## Credits
 
