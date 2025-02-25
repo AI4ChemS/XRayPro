@@ -11,7 +11,7 @@ import yaml
 def finetune(model, train_loader, val_loader, test_loader, file_path = 'data/CoRE-MOF/ft', save_path = 'ft_uptake_high_pressure.h5', device = 'cuda:0', num_epoch = 100, label = 'CH4 Uptake at 64 bar'):
     __file__ = 'xraypro.py'
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    yaml_path = os.path.abspath(os.path.join(current_dir, '..', 'src', 'xraypro', 'MOFormer_modded', 'config_ft_transformer.yaml'))
+    yaml_path = os.path.abspath(os.path.join(current_dir, '..', 'xraypro', 'transformer_precursor', 'config_ft_transformer.yaml'))
 
     config = yaml.load(open(yaml_path, "r"), Loader=yaml.FullLoader)
 

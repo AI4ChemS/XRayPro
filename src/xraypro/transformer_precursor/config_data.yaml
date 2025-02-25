@@ -1,0 +1,11 @@
+path:
+  path_to_pxrd: './data/arabg/pxrd'
+  path_to_precursor: './data/arabg/precursors'
+  path_to_csv: './data/arabg/csv'
+  label: 'pure_uptake_methane_298.00_6500000'
+
+test_ratio: 0.10
+valid_ratio: 0.20
+batch_size: 64
+model_save_path: './data/arabg/model.pth'
+SEED: 0

@@ -21,23 +21,17 @@ from torch.autograd import Variable
 from torch.utils.data import Dataset, DataLoader, random_split
 from torch import nn, Tensor
 
-#from models.MOFormer_modded.transformer import Transformer, TransformerRegressor
-from xraypro.MOFormer_modded.dataset_modded import MOF_ID_Dataset
-from xraypro.MOFormer_modded.tokenizer.mof_tokenizer import MOFTokenizer
+from xraypro.transformer_precursor.dataset_modded import MOF_ID_Dataset
+from xraypro.transformer_precursor.tokenizer.mof_tokenizer import MOFTokenizer
 import csv
 import yaml
-from xraypro.MOFormer_modded.model.utils import *
+from xraypro.transformer_precursor.model.utils import *
 
-from xraypro.MOFormer_modded.transformer import PositionalEncoding
+from xraypro.transformer_precursor.transformer import PositionalEncoding
 from torch.nn import TransformerEncoder, TransformerEncoderLayer
 import math
 
 __file__ = 'xraypro.py'
-current_dir = os.path.dirname(os.path.abspath(__file__))
-yaml_path = os.path.abspath(os.path.join(current_dir, '..', 'src', 'xraypro', 'MOFormer_modded', 'config_ft_transformer.yaml'))
-
-config = yaml.load(open(yaml_path, "r"), Loader=yaml.FullLoader)
-config['dataloader']['randomSeed'] = 0
 
 class Transformer(nn.Module):
 
@@ -186,13 +180,13 @@ class UnifiedTransformer(nn.Module):
         proj_out = self.proj(concatenated_tensor_corrected)
         return proj_out
 
-def _load_pre_trained_weights(model, mode = 'cgcnn'):
+def _load_pre_trained_weights(model, config, mode = 'cgcnn'):
     """
     Taken from this repository: https://github.com/zcao0420/MOFormer/blob/main/finetune_transformer.py
     """
     __file__ = 'xraypro.py'
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    ssl_path = os.path.abspath(os.path.join(current_dir, '..', 'src', 'SSL', 'pretrained', 'cgcnn'))
+    ssl_path = os.path.abspath(os.path.join('pretrained', 'cgcnn'))
     
     try:
         if mode == 'cgcnn':
@@ -243,18 +237,78 @@ class UnifiedTransformer_Regression(nn.Module):
 
         return output
 
-if torch.cuda.is_available():
-    device = 'cuda:0'
-    torch.cuda.set_device(device)
+class UnifiedTransformer_Classification(nn.Module):
+    def __init__(self, model, mlp_hidden_dim=256, embed_size = 512, threshold = 0.4):
+        super(UnifiedTransformer_Classification, self).__init__()
+        
+        self.model = model
+        self.threshold = threshold
 
-else:
-    device = 'cpu'
+        #classification head
+        self.classification_head = nn.Sequential(
+            nn.Linear(embed_size, mlp_hidden_dim),
+            nn.ReLU(),
+            nn.Linear(mlp_hidden_dim, 1),
+            nn.Sigmoid()
+        )
+        
+    def forward(self, xrd, smiles):
+        model_output = self.model(xrd, smiles)
+        output = self.classification_head(model_output)
+
+        return output
 
 class loadModel():
-    def __init__(self, mode = 'cgcnn'):
-        self.concat_model = UnifiedTransformer(config).to(device)
-        self.model_pre = _load_pre_trained_weights(model = self.concat_model, mode = mode)
+    def __init__(self, config, mode = 'cgcnn'):
+        if torch.cuda.is_available():
+            self.device = 'cuda:0'
+            torch.cuda.set_device(self.device)
+
+        else:
+            self.device = 'cpu'
+
+        self.concat_model = UnifiedTransformer(config).to(self.device)
+        self.model_pre = _load_pre_trained_weights(model = self.concat_model, mode = mode, config = config)
     
     def regressionMode(self):
-        model = UnifiedTransformer_Regression(self.model_pre).to(device)
+        model = UnifiedTransformer_Regression(self.model_pre).to(self.device)
         return model
+    
+    def classificationMode(self):
+        model = UnifiedTransformer_Classification(self.model_pre).to(self.device)
+        return model
+
+# made class to make model predictions directly from inputted data points; should probably include a class for preprocessing datapoints
+
+class XRayPro():
+    def __init__(self, config, path_to_weights, SEED = 0, embedding = False):
+        """
+        class should be able to take in any DataLoader and output predictions
+        """
+        self.embedding = embedding
+        self.config = config
+        self.path_to_weights = path_to_weights
+        self.model = loadModel(self.config, mode = 'None').regressionMode()
+
+        if torch.cuda.is_available():
+            self.device = 'cuda:0'
+        else:
+            self.device = 'cpu'
+
+    def predict(self, loader):
+        self.model.load_state_dict(torch.load(self.path_to_weights))
+        self.model = self.model.to(self.device)
+        self.model.eval()
+
+        predictions = []
+
+        for bn, (input1, input2, _) in enumerate(loader):
+            input2 = input2.unsqueeze(1).to(self.device)
+            input1 = input1.to(self.device)
+
+            output = self.model(input2, input1)
+
+            for i in output.cpu().detach().numpy().flatten():
+                predictions.append(i)
+        
+        return predictions

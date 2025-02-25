@@ -21,14 +21,13 @@ from torch.autograd import Variable
 from torch.utils.data import Dataset, DataLoader, random_split
 from torch import nn, Tensor
 
-#from models.MOFormer_modded.transformer import Transformer, TransformerRegressor
-from xraypro.MOFormer_modded.dataset_modded import MOF_ID_Dataset
-from xraypro.MOFormer_modded.tokenizer.mof_tokenizer import MOFTokenizer
+from xraypro.transformer_precursor.dataset_modded import MOF_ID_Dataset
+from xraypro.transformer_precursor.tokenizer.mof_tokenizer import MOFTokenizer
 import csv
 import yaml
-from xraypro.MOFormer_modded.model.utils import *
+from xraypro.transformer_precursor.model.utils import *
 
-from xraypro.MOFormer_modded.transformer import PositionalEncoding
+from xraypro.transformer_precursor.transformer import PositionalEncoding
 from xraypro.xraypro import Transformer, CNN_PXRD, UnifiedTransformer, _load_pre_trained_weights
 from torch.nn import TransformerEncoder, TransformerEncoderLayer
 import math
