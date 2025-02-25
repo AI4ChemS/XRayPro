@@ -1,1 +1,0 @@
-O[Zr]123([OH2])[OH]4[Zr]56[O]3[Zr]37([OH]2[Zr]28[O]1[Zr]14([O]6[Zr]([OH]53)([OH]21)([O]78)([OH2])O)([OH2])O)([OH2])O.[O-]C(=O)c1cc(c(cc1C(F)(F)F)C(c1cc(c(cc1C(F)(F)F)C(=O)[O-])C(F)(F)F)(c1cc(c(cc1C(F)(F)F)C(=O)[O-])C(F)(F)F)c1cc(c(cc1C(F)(F)F)C(=O)[O-])C(F)(F)F)C(F)(F)F MOFid-v1.fcu,pcu.cat0;flu_sym_4_on_6_sym_8_mc_9_L_12_FGCF_2__

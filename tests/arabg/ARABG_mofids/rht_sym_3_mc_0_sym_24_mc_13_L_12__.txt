@@ -1,1 +1,0 @@
-[Cu].[Cu][Cu].[O-]C(=O)c1cc(cc(c1)c1ccc(cc1)C1=CN=N[CH]1)C(=O)[O-].[O-]C(=O)c1cc(cc(c1)c1ccc(cc1)C1=C[N]N=C1)C(=O)[O-] MOFid-v1.pyr,pcu.cat0;rht_sym_3_mc_0_sym_24_mc_13_L_12__

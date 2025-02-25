@@ -1,1 +1,0 @@
-[Cr][O]([Cr])[Cr].[O-]C(=O)c1cc(F)c(cc1F)c1cc(c(cc1c1cc(F)c(cc1F)C(=O)[O-])c1cc(F)c(cc1F)C(=O)[O-])c1cc(F)c(cc1F)C(=O)[O-] MOFid-v1.ERROR,fcu.cat0;stp_sym_5_on_9_sym_7_mc_4_L_12_FGF_2__

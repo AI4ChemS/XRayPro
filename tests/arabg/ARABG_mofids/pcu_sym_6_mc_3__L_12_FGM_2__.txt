@@ -1,1 +1,0 @@
-[O-]C(=O)c1cc(C)c(cc1C)C(=O)[O-].[Zn][O]([Zn])([Zn])[Zn] MOFid-v1.rna,lvt.cat0;pcu_sym_6_mc_3__L_12_FGM_2__

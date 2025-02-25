@@ -1,1 +1,0 @@
-Brc1c(C2=NC(=[N]=C([N]2)c2c(Br)c(Br)c(c(c2Br)Br)C(=O)[O-])c2c(Br)c(Br)c(c(c2Br)Br)C(=O)[O-])c(Br)c(c(c1Br)C(=O)[O-])Br.[Zn][O]([Zn])([Zn])[Zn] MOFid-v1.rhr,TIMEOUT.cat0;pyr_sym_3_on_1_sym_6_mc_3_L_12_FGB_4__

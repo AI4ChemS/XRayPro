@@ -1,1 +1,0 @@
-[Cr][O]([Cr])[Cr].[O-]C(=O)c1cc(C(=O)[O-])c(cc1C(=O)[O-])C(=O)[O-] MOFid-v1.rhr,flu.cat0;stp_sym_5_on_9_sym_7_mc_4____

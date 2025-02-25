@@ -1,1 +1,0 @@
-[Cr][O]([Cr])[Cr].[O-]C(=O)c1cc(N)c(cc1N)C(=O)[O-].[Zn][O]([Zn])([Zn])[Zn] MOFid-v1.ERROR,ssb.cat0;nia_sym_6_mc_3_sym_7_mc_4_L_12_FGNH_2__

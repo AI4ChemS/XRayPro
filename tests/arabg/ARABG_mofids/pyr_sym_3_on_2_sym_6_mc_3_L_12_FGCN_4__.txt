@@ -1,1 +1,0 @@
-N#Cc1c(c2cc(cc(c2)c2c(C#N)c(C#N)c(c(c2C#N)C#N)C(=O)[O-])c2c(C#N)c(C#N)c(c(c2C#N)C#N)C(=O)[O-])c(C#N)c(c(c1C#N)C(=O)[O-])C#N.[Zn][O]([Zn])([Zn])[Zn] MOFid-v1.ERROR.cat0;pyr_sym_3_on_2_sym_6_mc_3_L_12_FGCN_4__

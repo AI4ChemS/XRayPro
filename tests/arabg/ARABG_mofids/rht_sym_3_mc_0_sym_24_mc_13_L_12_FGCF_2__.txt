@@ -1,1 +1,0 @@
-[Cu].[Cu][Cu].[O-]C(=O)c1cc(cc(c1)c1cc(c(cc1C(F)(F)F)C1=CN=N[CH]1)C(F)(F)F)C(=O)[O-].[O-]C(=O)c1cc(cc(c1)c1cc(c(cc1C(F)(F)F)C1=C[N]N=C1)C(F)(F)F)C(=O)[O-] MOFid-v1.ERROR,pyr.cat0;rht_sym_3_mc_0_sym_24_mc_13_L_12_FGCF_2__

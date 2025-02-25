@@ -1,1 +1,0 @@
-N#Cc1c(c2cc(cc(c2)C(=O)[O-])C(=O)[O-])c(C#N)c(c(c1C#N)C1=CN=N[CH]1)C#N.N#Cc1c(c2cc(cc(c2)C(=O)[O-])C(=O)[O-])c(C#N)c(c(c1C#N)C1=C[N]N=C1)C#N.[Cu].[Cu][Cu] MOFid-v1.ERROR,ntt.cat0;rht_sym_3_mc_0_sym_24_mc_13_L_12_FGCN_4__

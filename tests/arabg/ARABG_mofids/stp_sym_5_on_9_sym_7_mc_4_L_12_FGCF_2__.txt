@@ -1,1 +1,0 @@
-[Cr][O]([Cr])[Cr].[O-]C(=O)c1cc(c(cc1C(F)(F)F)c1cc(c(cc1c1cc(c(cc1C(F)(F)F)C(=O)[O-])C(F)(F)F)c1cc(c(cc1C(F)(F)F)C(=O)[O-])C(F)(F)F)c1cc(c(cc1C(F)(F)F)C(=O)[O-])C(F)(F)F)C(F)(F)F MOFid-v1.rna,rhr.cat0;stp_sym_5_on_9_sym_7_mc_4_L_12_FGCF_2__

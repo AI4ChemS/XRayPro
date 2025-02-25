@@ -1,1 +1,0 @@
-[Cu][Cu].[O-]C(=O)c1cc(F)c(cc1F)C(=O)[O-] MOFid-v1.ERROR.cat0;nbob_sym_5_mc_2_sym_5_mc_2_L_12_FGF_2__

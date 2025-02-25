@@ -1,1 +1,0 @@
-[Cr][O]([Cr])[Cr].[Cu][Cu].[O-]C(=O)c1ccc(cc1)C(=O)[O-] MOFid-v1.ERROR,ntt.cat0;stp_sym_5_mc_2_sym_7_mc_4_L_12__

@@ -1,1 +1,0 @@
-[O-]C(=O)c1cc(N)c(cc1N)c1cc(c2cc(N)c(cc2N)C(=O)[O-])c2c3c1ccc1c3c(cc2)c(cc1c1cc(N)c(cc1N)C(=O)[O-])c1cc(N)c(cc1N)C(=O)[O-].[O]12[Zr]34[OH]5[Zr]62[OH]2[Zr]71[OH]4[Zr]14[O]3[Zr]35[O]6[Zr]2([O]71)[OH]43 MOFid-v1.ERROR.cat0;ftw_sym_5_on_11_sym_12_mc_11_L_12_FGNH_2__
