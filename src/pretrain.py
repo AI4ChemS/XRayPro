@@ -14,20 +14,20 @@ import pickle
 import csv
 import yaml
 
-from xraypro.MOFormer_modded.transformer import Transformer, TransformerRegressor
-from xraypro.MOFormer_modded.dataset_modded import MOF_ID_Dataset
-from xraypro.MOFormer_modded.tokenizer.mof_tokenizer import MOFTokenizer
-from xraypro.MOFormer_modded.model.utils import *
+from xraypro.transformer_precursor.transformer import Transformer, TransformerRegressor
+from xraypro.transformer_precursor.dataset_modded import MOF_ID_Dataset
+from xraypro.transformer_precursor.tokenizer.mof_tokenizer import MOFTokenizer
+from xraypro.transformer_precursor.model.utils import *
 from xraypro.cgcnn.extract import extractFeaturesCGCNN
 from xraypro.cgcnn.extract import collate_pool_mod
 from xraypro.cgcnn.cgcnn_pretrain import CrystalGraphConvNet
-from xraypro.MOFormer_modded.transformer import PositionalEncoding
+from xraypro.transformer_precursor.transformer import PositionalEncoding
 from torch.nn import TransformerEncoder, TransformerEncoderLayer
 import math
 from SSL.barlow_twins import BarlowTwinsLoss
 
-tokenizer = MOFTokenizer("xraypro/MOFormer_modded/tokenizer/vocab_full.txt")
-config = yaml.load(open("xraypro/MOFormer_modded/config_ft_transformer.yaml", "r"), Loader=yaml.FullLoader)
+tokenizer = MOFTokenizer("xraypro/transformer_precursor/tokenizer/vocab_full.txt")
+config = yaml.load(open("xraypro/transformer_precursor/config_ft_transformer.yaml", "r"), Loader=yaml.FullLoader)
 config['dataloader']['randomSeed'] = 0
 
 if torch.cuda.is_available() and config['gpu'] != 'cpu':
