@@ -11,6 +11,18 @@ A demo of the finetuning can be found in ```src/finetuning.ipynb```, in which th
 ## Web Application
 We have a Streamlit application for XRayPro, available [here](https://xraypro.streamlit.app). If you wish to install the application to run on your machine locally, please visit the [web repository](https://github.com/AI4ChemS/xraypro-web/tree/main) for a guide to install.
 
+## Installation
+Python 3.11.9 is recommended for this package. Furthermore, when pretraining, finetuning and evaluating the model (especially across many MOFs), a GPU is heavily recommended; please do ``torch.cuda.is_available()`` in your Python environment/notebook to see if your environment is able to correctly access your GPU (if you have one). For complete use of this package, please follow these steps (assuming you have access to conda):
+
+```
+git clone https://github.com/AI4ChemS/XRayPro.git
+conda create -n xraypro python=3.11.9
+conda activate xraypro
+
+cd path/to/xraypro
+pip install -r requirements.txt
+```
+
 ## Main
 
 XRayPro is a multimodal model that accepts the powder x-ray diffraction (PXRD) pattern and chemical precursors to make a wide variety of property predictions of metal-organic frameworks (MOFs), while supplementing the most feasible applications per MOF. This is a tool that is motivated by accelerating material discovery. A workflow of our model can be shown below, in which a transformer encodes and embeds the inputted chemical precursor (in the form of the SMILES of the organic linker and metal node), whereas the convolutional neural network (CNN) embeds the PXRD pattern, before performing regression. Furthermore, self-supervised learning (Barlow-Twin) is done on our model against a crystal graph convolutional neural network (CGCNN) to not only improve data efficiency at low data regimes, but also provide more context about the local environment of the MOF. These pretrained weights are loaded into XRayPro and can be finetuned for any task. 
