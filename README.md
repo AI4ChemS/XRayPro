@@ -1,5 +1,5 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-[![Open in Streamlit](https://img.shields.io/badge/Streamlit-Open%20in%20Streamlit-brightgreen)](https://<streamlit-link>)
+[![Open in Streamlit](https://img.shields.io/badge/Streamlit-Open%20in%20Streamlit-brightgreen)](https://xraypro.streamlit.app/)
 
 ## XRayPro
 
@@ -25,9 +25,12 @@ We have evalauted our finetuned model on entries from the Cambridge Structural D
 
 ### Benchmark models
 
-A couple of benchmark models were considered - a descriptor-based ML model (which accepts geometric descriptors and chemistry RACs), CGCNN (which accepts crystal structures) and MOFormer (which accepts MOFids as inputs). It can be seen that our model outcompetes MOFormer and CGCNN for geometric properties such as uptake at HP mainly due to the context PXRD patterns provides, alongside competing well against the chemistry-reliant and electronic properties such as band gap. While the descriptor-based ML model generally outperforms XRayPro, the advantage we have is that these descriptors are very difficult to obtain, whereas PXRDs and precursors are very easy to obtain! Furthermore, we compete with descriptor-based ML models for geometric properties decently well for this to be sustainable.
+A couple of benchmark models were considered - a descriptor-based ML model (which accepts geometric descriptors and chemistry RACs), CGCNN (which accepts crystal structures) and MOFormer (which accepts MOFids as inputs). It can be seen that our model outperforms MOFormer and CGCNN for geometric properties such as uptake at HP mainly due to the context PXRD patterns provides, alongside competing well against the chemistry-reliant and electronic properties such as band gap. While the descriptor-based ML model generally outperforms XRayPro, the advantage we have is that these descriptors require crystal structures, which are quite challenging to obtain, whereas retrieving the PXRD and chemical precursors are immediately known - ultimately accelerating material discovery. Furthermore, we compete with descriptor-based ML models for geometric properties decently well for this to be sustainable.
 
-![spider_w_cgcnn_v2](https://github.com/user-attachments/assets/cc690a38-6856-49b9-87e3-111344343148)
+The panel on the right shows why we consider multimodality rather than simply using one input. The PXRD and chemical precursor complement well with each other, as the PXRD captures the global structure/environment of the MOF, whereas the chemical precursors describe the metal and organic chemistry. When these two representations are combined, our model is well-rounded and competes with structural models such as CGCNN.
+
+<img width="1186" alt="Figure2_v3" src="https://github.com/user-attachments/assets/cda97bab-6c30-4ed7-8a1c-370f0de939dc" />
+
 
 ## Citation
 
@@ -46,7 +49,7 @@ If you use our work, please cite us using the BibTeX entry below.
 ```
 
 ## Note
-Our web app tool does not store any data that is inputted into the entry fields (there is no external database for this).
+Our web app tool does **NOT** store any data that is inputted into the entry fields (there is no external database for this).
 
 ## Credits
 
