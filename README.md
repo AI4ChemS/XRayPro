@@ -60,7 +60,7 @@ If you use our work, please cite us using the BibTeX entry below.
 }
 ```
 
-## Note
+## Privacy when using web application
 Our web app tool does **NOT** store any data that is inputted into the entry fields (there is no external database for this).
 
 ## Credits
