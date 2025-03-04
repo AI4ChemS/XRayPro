@@ -12,7 +12,10 @@ A demo of the finetuning can be found in ```src/finetuning.ipynb```, in which th
 We have a Streamlit application for XRayPro, available [here](https://xraypro.streamlit.app). If you wish to install the application to run on your machine locally, please visit the [web repository](https://github.com/AI4ChemS/xraypro-web/tree/main) for a guide to install.
 
 ## Hardware Requirements
-It is highly encouraged for this package to be used on a GPU (for pretraining, finetuning and evaluating data points). This software was developed and tested on NVIDIA RTX4090, so it is highly recommended to use a GPU along this power. Regarding runtime, for finetuning on 4000 data points (CoRE-MOF), it takes around 5-7 minutes to finetune on 100 epochs, whereas for a larger database such as BW20K (20K entries), it takes around 20 minutes to finetune on 30 epochs. 
+It is highly encouraged for this package to be used on a GPU (for pretraining, finetuning and evaluating data points). This software was developed and tested on NVIDIA RTX4090, so it is highly recommended to use a GPU along this power. Regarding runtime, for finetuning on 4000 data points (CoRE-MOF), it takes around 5-7 minutes to finetune on 100 epochs, whereas for a larger database such as BW20K (20K entries), it takes around 20 minutes to finetune on 30 epochs. Regarding runtimes on the demonstrations provided (on NVIDIA RTX4090):
+1. ``predictions.ipynb`` takes around 20 seconds to fully run (demo done on 100 data points).
+2. ``finetuning.ipynb`` takes around 5 minutes to fully run
+3. ``experimental.ipynb`` runs nearly instantaneously.
 
 ## Software requirements
 ### OS Requirements
