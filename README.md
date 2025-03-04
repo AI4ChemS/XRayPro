@@ -35,6 +35,9 @@ pip install -r requirements.txt
 
 Under the assumption that this is being installed on a fresh environment, the installation time ranges between 2-4 minutes.
 
+## Data Availability
+If you are interested in reproducing the results in our paper, please download the data available in the following repository: https://zenodo.org/records/14908210
+
 ## Main
 
 XRayPro is a multimodal model that accepts the powder x-ray diffraction (PXRD) pattern and chemical precursors to make a wide variety of property predictions of metal-organic frameworks (MOFs), while supplementing the most feasible applications per MOF. This is a tool that is motivated by accelerating material discovery. A workflow of our model can be shown below, in which a transformer encodes and embeds the inputted chemical precursor (in the form of the SMILES of the organic linker and metal node), whereas the convolutional neural network (CNN) embeds the PXRD pattern, before performing regression. Furthermore, self-supervised learning (Barlow-Twin) is done on our model against a crystal graph convolutional neural network (CGCNN) to not only improve data efficiency at low data regimes, but also provide more context about the local environment of the MOF. These pretrained weights are loaded into XRayPro and can be finetuned for any task. 
