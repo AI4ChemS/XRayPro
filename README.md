@@ -11,6 +11,13 @@ A demo of the finetuning can be found in ```src/finetuning.ipynb```, in which th
 ## Web Application
 We have a Streamlit application for XRayPro, available [here](https://xraypro.streamlit.app). If you wish to install the application to run on your machine locally, please visit the [web repository](https://github.com/AI4ChemS/xraypro-web/tree/main) for a guide to install.
 
+## Hardware Requirements
+It is highly encouraged for this package to be used on a GPU (for pretraining, finetuning and evaluating data points). This software was developed and tested on NVIDIA RTX4090, so it is highly recommended to use a GPU along this power. Regarding runtime, for finetuning on 4000 data points (CoRE-MOF), it takes around 5-7 minutes to finetune on 100 epochs, whereas for a larger database such as BW20K (20K entries), it takes around 20 minutes to finetune on 30 epochs. 
+
+## Software requirements
+### OS Requirements
+This package should be working properly on Linux and Windows. In particular, the package has been tested on Ubuntu 22.04.4 LTS.
+
 ## Installation
 Python 3.11.9 is recommended for this package. Furthermore, when pretraining, finetuning and evaluating the model (especially across many MOFs), a GPU is heavily recommended; please do ``torch.cuda.is_available()`` in your Python environment/notebook to see if your environment is able to correctly access your GPU (if you have one). For complete use of this package, please follow these steps (assuming you have access to conda):
 
