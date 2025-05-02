@@ -1,5 +1,6 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 [![Open in Streamlit](https://img.shields.io/badge/Streamlit-Open%20in%20Streamlit-brightgreen)](https://xraypro.streamlit.app/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15330842.svg)](https://doi.org/10.5281/zenodo.15330842)
 
 ## XRayPro
 
