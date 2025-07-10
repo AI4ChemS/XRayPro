@@ -65,14 +65,15 @@ The panel on the right shows why we consider multimodality rather than simply us
 If you use our work, please cite us using the BibTeX entry below.
 
 ```bibtex
-@article{khan2024connecting,
-  title = {Connecting metal-organic framework synthesis to applications with a self-supervised multimodal model},
-  author = {Khan, Sartaaj Takrim and Moosavi, Seyed Mohamad},
-  year = {2024},
-  journal = {ChemRxiv},
-  doi = {10.26434/chemrxiv-2024-mq9b4},
-  url = {https://chemrxiv.org/engage/chemrxiv/article-details/671a9d9783f22e42140f2df6},
-  note = {Preprint, not peer-reviewed}
+@article{khan2025connecting,
+  title={Connecting metal-organic framework synthesis to applications using multimodal machine learning},
+  author={Khan, Sartaaj Takrim and Moosavi, Seyed Mohamad},
+  journal={Nature Communications},
+  volume={16},
+  number={1},
+  pages={5642},
+  year={2025},
+  publisher={Nature Publishing Group UK London}
 }
 ```
 
