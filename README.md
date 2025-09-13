@@ -4,7 +4,7 @@
 
 ## XRayPro
 
-A recommendation system for MOFs leveraging only PXRDs and precursors. For further details, please refer to our [paper](https://chemrxiv.org/engage/chemrxiv/article-details/671a9d9783f22e42140f2df6). 
+A recommendation system for MOFs leveraging only PXRDs and precursors. For further details, please refer to our [paper](https://www.nature.com/articles/s41467-025-60796-0). 
 
 ## Usage
 A demo of the finetuning can be found in ```src/finetuning.ipynb```, in which the model is finetuned to predict methane uptake at HP on ARABG database. For pretraining purposes, please refer to ```src/pretrain.py```. For making predictions with loaded weights, please refer to ```src/predictions.ipynb```. For these two notebooks, please visit the Data Availability section to find and download the data necessary to run these notebooks on your machine. For preprocessing experimental PXRDs, visit ```src/experimental.ipynb```.
